@@ -4,7 +4,7 @@ import reverse_geocoder as rg
 
 lat_longs = {}
 
-with open("dataset/business.json") as business_json:
+with open("dataset/yelp_academic_dataset_business.json") as business_json:
     for line in business_json.readlines():
         item = json.loads(line)
         if item["latitude"] and item["longitude"]:
